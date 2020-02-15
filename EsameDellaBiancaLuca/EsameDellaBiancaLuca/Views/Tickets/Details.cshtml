@@ -1,0 +1,91 @@
+﻿@model EsameDellaBiancaLuca.Models.Ticket
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ticket</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Anagrafica.Cognome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Anagrafica.Cognome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Utente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Utente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Incaricato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Incaricato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataRichiesta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataRichiesta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataChiusura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataChiusura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StatoRichiesta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StatoRichiesta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TitoloRichiesta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TitoloRichiesta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescrizioneRichiesta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescrizioneRichiesta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescrizioneRisposta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescrizioneRisposta)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TicketId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
